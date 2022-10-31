@@ -1,0 +1,25 @@
+{% include 'head.html' %}
+<div class="container">
+
+    <h2>Update Car</h2>
+    
+    <form action="" method="POST">
+       
+        <div class="form-group row">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" value="{{ car.name }}" name="name" id="name">
+        </div>
+        <div class="form-group row">
+            <label for="year">Make Year</label>
+            <input type="text" class="form-control" name="year" value="{{ car.year }}" id="year">
+        </div>
+        <div class="form-group row">
+            <label for="price">Sell Price</label>
+            <input type="text" class="form-control" value="{{ car.price }}" name="price" id="price">
+        </div>
+        <input type="hidden" name="id" value="{{ car.id }}" id="">
+        <button type="btnupdate" class="btn btn-primary">Submit</button>
+        <a href="/" class="btn btn-danger">Cancel</a>
+    </form>
+</div>
+{% include 'footer.html' %}

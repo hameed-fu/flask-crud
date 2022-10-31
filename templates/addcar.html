@@ -1,0 +1,24 @@
+{% include 'head.html' %}
+<div class="container">
+
+    <h2>Car Details</h2>
+    
+    <form action="" method="POST">
+       
+        <div class="form-group row">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" name="name" id="name">
+        </div>
+        <div class="form-group row">
+            <label for="year">Make Year</label>
+            <input type="text" class="form-control" name="year" id="year">
+        </div>
+        <div class="form-group row">
+            <label for="price">Sell Price</label>
+            <input type="text" class="form-control" name="price" id="price">
+        </div>
+        <button type="btnAdd" class="btn btn-primary">Submit</button>
+        <a href="/" class="btn btn-danger">Cancel</a>
+    </form>
+</div>
+{% include 'footer.html' %}
